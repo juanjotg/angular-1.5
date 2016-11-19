@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body ng-app="miApp" ng-controller="MiAppController as vm">
+	<h1>Hola {{quien}}</h1>
+	<input type="text" ng-model="vm.nuevaPelicula">
+	<a href="" ng-click="vm.agregaPeli()">Agregar pelicula</a>
+
+	<ul>
+		<li ng-repeat="peli in vm.peliculas">
+			{{peli}}
+		</li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

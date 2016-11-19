@@ -1,0 +1,35 @@
+<html lang="es">
+
+<head>
+  <title>GTD Edge seed</title>
+  <meta name="description" content="Semilla para la aplicación Getting Thins Done " />
+  <meta name="keywords" content="ES6, JSPM, AngularJS1.5 , Material Design" />
+  <meta name="author" content="albertobasalo@agorabinaria.com" />
+  <meta charset="utf-8" />
+  
+  <link href="bower_components/angular-material/angular-material.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body layout="column" layout-fill>
+    <div ng-hide="true">Esperando la carga de la aplicación .....</div>
+    <h2 class="md-display-1">Hola Mundo</h2>
+    <p class="md-body-2">Uno mas uno son {{1+1}}</p>
+
+    <md-input-container>
+        <label class="md-caption">Como te llamas</label>
+        <input type="text" ng-model="tuNombre" md-autofocus required md-maxlength="10" />
+    </md-input-container>
+    <div class="md-display-2">Hola {{tuNombre}}, bienvenido ... </div>
+Hola mundo
+{{1+1}}
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
